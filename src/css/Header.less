@@ -1,0 +1,183 @@
+#header {
+	min-width: 992px;
+	text-align: center;
+	font-size: 13px !important;
+	color: #757575;
+	box-sizing: border-box;
+	// position: relative;
+	overflow: visible;
+
+	/* 1:top-bar */
+	.top-bar {
+		padding: 10px 10px 0;
+		display: flex;
+		justify-content: space-between;
+		line-height: 26.7px;
+	}
+	/* right */
+	.top-right {
+		display: flex;
+	}
+	.router-link {
+		text-decoration: none;
+		color: #757575;
+	}
+	/* user-list */
+	.user-list {
+		width: 85px;
+		background: white;
+		position: absolute;
+		top: 33px;
+		z-index: 1001;
+		list-style: none;
+		text-align: left;
+		display: none;
+		padding: 0 0 0 10px;
+		box-sizing: border-box;
+		font-size: 12px;
+		li {
+			line-height: 25px;
+		}
+	}
+	// 鼠标悬停login reg
+	.welcome {
+		.router-link:hover {
+			color: #ff9003;
+		}
+	}
+	/* 鼠标悬停用户中心-鼠标样式 */
+	.welcome-title:hover {
+		cursor: pointer;
+	}
+	// 鼠标悬停在 welcome-title上时,改变其兄弟的样式
+	.welcome-title:hover + .user-list {
+		display: block;
+	}
+	.user-list:hover {
+		display: block;
+	}
+	.user-list a {
+		color: #ff9003;
+		text-decoration: none;
+	}
+
+	/* mic-cart */
+	.mic-cart {
+		position: relative;
+		.mic-cart-icon {
+			margin-left: 15px;
+			font-size: 20px;
+			.mic-cart-superscript {
+				min-width: 13px;
+				height: 13px;
+				line-height: 14px;
+				background-color: white;
+				color: #ff9003;
+				border-radius: 100%;
+				font-size: 7px;
+				font-weight: bolder;
+				text-align: center;
+				position: absolute;
+			}
+		}
+		.mic-cart-list {
+			width: 300px;
+			// height: 200px; // 高度: 内容撑开
+			background-color: floralwhite;
+			display: none;
+			padding: 10px 20px;
+			position: absolute;
+			z-index: 101;
+			top: 25px;
+			right: 0px;
+			.mic-cart-item {
+				display: flex;
+				padding: 5px 0;
+				border-bottom: 2px solid #e7eaed;
+				.item-left {
+					width: 90px;
+					height: 90px;
+					background-color: lightgreen;
+					img {
+						width: 90px;
+						height: 90px;
+					}
+				}
+				.item-right {
+					width: 200px;
+					padding-left: 20px;
+					text-align: left;
+					.title {
+						display: block;
+						line-height: 16px;
+						text-align: left;
+						margin: 8px 0 10px;
+					}
+					.price {
+						color: red;
+						margin-right: 5px;
+					}
+					.plus {
+						margin-right: 5px;
+					}
+					input {
+						display: inline-block;
+						width: 10px;
+					}
+					.delete {
+						margin-left: 5px;
+					}
+					.delete:hover {
+						color: red;
+					}
+				}
+			}
+		}
+		// hover显示购物车列表
+		.mic-cart-icon:hover + .mic-cart-list {
+			display: block;
+		}
+		.mic-cart-list:hover {
+			display: block;
+		}
+	}
+	/* 2:title-pic */
+	.title-pic {
+		width: 204px;
+		height: 58px;
+	}
+	/* 3:nav-bar */
+	.nav-bar {
+		width: 94%;
+		min-width: 992px;
+		height: 70px;
+		border-radius: 35px;
+		background: #ff9003;
+		box-sizing: border-box;
+		padding: 0 60px;
+		position: absolute;
+	}
+	.nav-bar > .nav-list {
+		list-style-type: none;
+		width: 94%;
+		margin: 0 40px;
+		line-height: 70px;
+		display: table;
+	}
+	.nav-bar > .nav-list > li {
+		display: table-cell;
+	}
+	.nav-bar > .nav-list .nav-link {
+		text-decoration: none;
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+	}
+	.nav-bar > .nav-list li:hover {
+		background: black;
+	}
+	.nav-bar > .nav-list > li > .nav-link {
+		color: white;
+	}
+}

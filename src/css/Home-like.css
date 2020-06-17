@@ -1,0 +1,21 @@
+.like {
+  min-width: 992px;
+  align-self: center;
+}
+.like-ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.like-ul > li {
+  width: 16.66666667%;
+  padding: 0 10px 10px 0;
+  box-sizing: border-box;
+}
+.product {
+  width: 100%;
+}
+.pro-detail {
+  display: block;
+}

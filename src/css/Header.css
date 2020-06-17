@@ -1,0 +1,174 @@
+#header {
+  min-width: 992px;
+  text-align: center;
+  font-size: 13px !important;
+  color: #757575;
+  box-sizing: border-box;
+  overflow: visible;
+  /* 1:top-bar */
+  /* right */
+  /* user-list */
+  /* 鼠标悬停用户中心-鼠标样式 */
+  /* mic-cart */
+  /* 2:title-pic */
+  /* 3:nav-bar */
+}
+#header .top-bar {
+  padding: 10px 10px 0;
+  display: flex;
+  justify-content: space-between;
+  line-height: 26.7px;
+}
+#header .top-right {
+  display: flex;
+}
+#header .router-link {
+  text-decoration: none;
+  color: #757575;
+}
+#header .user-list {
+  width: 85px;
+  background: white;
+  position: absolute;
+  top: 33px;
+  z-index: 1001;
+  list-style: none;
+  text-align: left;
+  display: none;
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+#header .user-list li {
+  line-height: 25px;
+}
+#header .welcome .router-link:hover {
+  color: #ff9003;
+}
+#header .welcome-title:hover {
+  cursor: pointer;
+}
+#header .welcome-title:hover + .user-list {
+  display: block;
+}
+#header .user-list:hover {
+  display: block;
+}
+#header .user-list a {
+  color: #ff9003;
+  text-decoration: none;
+}
+#header .mic-cart {
+  position: relative;
+}
+#header .mic-cart .mic-cart-icon {
+  margin-left: 15px;
+  font-size: 20px;
+}
+#header .mic-cart .mic-cart-icon .mic-cart-superscript {
+  min-width: 13px;
+  height: 13px;
+  line-height: 14px;
+  background-color: white;
+  color: #ff9003;
+  border-radius: 100%;
+  font-size: 7px;
+  font-weight: bolder;
+  text-align: center;
+  position: absolute;
+}
+#header .mic-cart .mic-cart-list {
+  width: 300px;
+  background-color: floralwhite;
+  display: none;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 101;
+  top: 25px;
+  right: 0px;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item {
+  display: flex;
+  padding: 5px 0;
+  border-bottom: 2px solid #e7eaed;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item .item-left {
+  width: 90px;
+  height: 90px;
+  background-color: lightgreen;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item .item-left img {
+  width: 90px;
+  height: 90px;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item .item-right {
+  width: 200px;
+  padding-left: 20px;
+  text-align: left;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item .item-right .title {
+  display: block;
+  line-height: 16px;
+  text-align: left;
+  margin: 8px 0 10px;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item .item-right .price {
+  color: red;
+  margin-right: 5px;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item .item-right .plus {
+  margin-right: 5px;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item .item-right input {
+  display: inline-block;
+  width: 10px;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item .item-right .delete {
+  margin-left: 5px;
+}
+#header .mic-cart .mic-cart-list .mic-cart-item .item-right .delete:hover {
+  color: red;
+}
+#header .mic-cart .mic-cart-icon:hover + .mic-cart-list {
+  display: block;
+}
+#header .mic-cart .mic-cart-list:hover {
+  display: block;
+}
+#header .title-pic {
+  width: 204px;
+  height: 58px;
+}
+#header .nav-bar {
+  width: 94%;
+  min-width: 992px;
+  height: 70px;
+  border-radius: 35px;
+  background: #ff9003;
+  box-sizing: border-box;
+  padding: 0 60px;
+  position: absolute;
+}
+#header .nav-bar > .nav-list {
+  list-style-type: none;
+  width: 94%;
+  margin: 0 40px;
+  line-height: 70px;
+  display: table;
+}
+#header .nav-bar > .nav-list > li {
+  display: table-cell;
+}
+#header .nav-bar > .nav-list .nav-link {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#header .nav-bar > .nav-list li:hover {
+  background: black;
+}
+#header .nav-bar > .nav-list > li > .nav-link {
+  color: white;
+}
